@@ -1,0 +1,11 @@
+<p>cursos works!</p>
+<p>Página: {{ pagina }}</p>
+
+<div class="collection">
+    <ul class="collection">
+        <li class="collection-item" *ngFor="let curso of cursos">
+            <a href="#!" [routerLink]="['/cursos',curso.id]"> {{ curso.nome }}</a>
+        </li>
+    </ul>
+</div>
+<button  (click)="proximaPagina()">Next</button>

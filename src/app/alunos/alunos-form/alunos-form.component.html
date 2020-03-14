@@ -1,0 +1,21 @@
+<p>Criar/Editar aluno</p>
+<div class="col s12">
+    <div class="row">
+        <div class="input-field col s12">
+            <input disabled [(ngModel)]="aluno.id" id="disabled" (input)="onInput()" type="text">
+            <label for="disabled" class="active">#</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input  [(ngModel)]="aluno.nome" id="nome" (input)="onInput()" class="validated">
+            <label for="nome" class="active">Nome</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input  [(ngModel)]="aluno.email" id="email" class="validated">
+            <label for="email" class="active">Email</label>
+        </div>
+    </div>
+</div>
